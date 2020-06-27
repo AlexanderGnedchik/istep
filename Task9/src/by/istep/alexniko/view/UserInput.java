@@ -8,8 +8,8 @@ public class UserInput {
     public static int inputSizeArray(String msg) {
         System.out.print(msg);
         int sizeArray = scanner.nextInt();
-        while (sizeArray > 5) {
-            System.out.println("Your size must be less 6");
+        while (sizeArray > 5 || sizeArray <0) {
+            System.out.println("Your size must be more 0 and less 6");
             System.out.println(msg);
             sizeArray = scanner.nextInt();
         }
