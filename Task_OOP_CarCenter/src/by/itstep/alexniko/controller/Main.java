@@ -15,6 +15,7 @@ public class Main {
                 new AudiQ(90000, "Q7","WAUZZZ8AZMA123458", 208, 9.1),
                 new AudiRS(180000, "RS6","WAUZZZ8AZMA123459", 3.5, 306),
                 new AudiRS(280000, "RS7","WAUZZZ8AZMA123410", 3.1, 330),
+                new AudiRS(289000, "RS7","WAUZZZ8AZMA123499", 3.1, 330),
                 new AudiQ(85200, "Q5","WAUZZZ8AZMA123411", 208, 9.5),
                 new AudiQ(90000, "Q7","WAUZZZ8AZMA123412", 215, 11.1),
                 new AudiQ(93000, "Q7","WAUZZZ8AZMA123413", 223, 10.1),
