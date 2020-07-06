@@ -32,7 +32,7 @@ public class CarCenterTest {
     }
     @Test
     public void testCalculateMostReachCar(){
-        String expected = " price=280000.0$, model='RS6, vinNumberAuto='WAUZZZ8AZMA123456";
+        String expected = "RS6, VIN Number Auto: WAUZZZ8AZMA123456";
         String actual = CarCenter.calculateMostExpensiveCar(cars);
         assertEquals(expected,actual);
     }

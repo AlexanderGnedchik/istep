@@ -23,7 +23,7 @@ public class Main {
         String mostExpensiveCar = CarCenter.calculateMostExpensiveCar(car);
         double totalPrice = CarCenter.calculateTotalCarsPrice(car);
 
-        Printer.printer("Most reach car: " + mostExpensiveCar);
+        Printer.printer("Most expensive car: Model: Audi " + mostExpensiveCar);
         Printer.printer("Total price: " + totalPrice + "$");
     }
 

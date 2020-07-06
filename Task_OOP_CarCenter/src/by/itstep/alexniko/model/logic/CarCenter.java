@@ -8,10 +8,10 @@ public class CarCenter {
         double totalPrice = 0;
 
         for (Car car : cars) {
-            if (car.getPrice()<0){ // protect
+            if (car.getPrice() < 0) { // protect
                 totalPrice = -1;
                 break;
-            }else {
+            } else {
                 totalPrice += car.getPrice();
             }
         }
@@ -22,12 +22,12 @@ public class CarCenter {
         String model = "Car center doesn't have cars";
         double maxPrice = 0;
         for (Car car : cars) {
-            if (car.getPrice()<0){  // protect
+            if (car.getPrice() < 0) {  // protect
                 return "Error";
-            }else {
+            } else {
                 if (car.getPrice() > maxPrice) {
                     maxPrice = car.getPrice();
-                    model = car.toString();
+                    model = car.getModel() + ", VIN Number Auto: " + car.getVinNumberAuto();
                 }
             }
         }
