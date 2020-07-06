@@ -39,12 +39,12 @@ public class CarCenterTest {
     @Test
     public void testCalculateTotalCarsPrice2(){
         cars = new Car[] {
-                new Car(0),
+                new Car(-2),
                 new Car(0),
                 new Car(0),
                 new Car(0),
         };
-        double expected = 0;
+        double expected = -1;
         double actual = CarCenter.calculateTotalCarsPrice(cars);
         assertEquals(expected,actual,0);
     }
@@ -60,6 +60,18 @@ public class CarCenterTest {
     public void testCalculateMostReachCar2(){
         cars = new Car[] {};
         String expected = "Car center doesn't have cars";
+        String actual = CarCenter.calculateMostExpensiveCar(cars);
+        assertEquals(expected,actual);
+    }
+    @Test
+    public void testCalculateMostReachCar3(){
+        cars = new Car[] {
+                new Car(-200000),
+                new Car(0),
+                new Car(0),
+                new Car(0),
+        };
+        String expected = "Error";
         String actual = CarCenter.calculateMostExpensiveCar(cars);
         assertEquals(expected,actual);
     }

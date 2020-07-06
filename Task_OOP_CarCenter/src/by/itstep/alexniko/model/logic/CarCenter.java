@@ -8,7 +8,12 @@ public class CarCenter {
         double totalPrice = 0;
 
         for (Car car : cars) {
-            totalPrice += car.getPrice();
+            if (car.getPrice()<0){ // protect
+                totalPrice = -1;
+                break;
+            }else {
+                totalPrice += car.getPrice();
+            }
         }
         return totalPrice;
     }
@@ -17,9 +22,13 @@ public class CarCenter {
         String model = "Car center doesn't have cars";
         double maxPrice = 0;
         for (Car car : cars) {
-            if (car.getPrice() > maxPrice) {
-                maxPrice = car.getPrice();
-                model = car.toString();
+            if (car.getPrice()<0){  // protect
+                return "Error";
+            }else {
+                if (car.getPrice() > maxPrice) {
+                    maxPrice = car.getPrice();
+                    model = car.toString();
+                }
             }
         }
         return model;
