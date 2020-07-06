@@ -20,10 +20,10 @@ public class Main {
                 new AudiQ(93000, "Q7","WAUZZZ8AZMA123413", 223, 10.1),
         };
 
-        String mostReachCar = CarCenter.calculateMostExpensiveCar(car);
+        String mostExpensiveCar = CarCenter.calculateMostExpensiveCar(car);
         double totalPrice = CarCenter.calculateTotalCarsPrice(car);
 
-        Printer.printer("Most reach car: " + mostReachCar);
+        Printer.printer("Most reach car: " + mostExpensiveCar);
         Printer.printer("Total price: " + totalPrice + "$");
     }
 
