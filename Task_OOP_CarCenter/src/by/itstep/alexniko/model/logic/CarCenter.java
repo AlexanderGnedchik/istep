@@ -13,7 +13,7 @@ public class CarCenter {
         return totalPrice;
     }
 
-    public static String calculateMostReachCar(Car[] cars) {
+    public static String calculateMostExpensiveCar(Car[] cars) {
         String model = "Car center doesn't have cars";
         double maxPrice = 0;
         for (Car car : cars) {

@@ -33,7 +33,7 @@ public class CarCenterTest {
     @Test
     public void testCalculateMostReachCar(){
         String expected = " price=280000.0$, model='RS6, vinNumberAuto='WAUZZZ8AZMA123456";
-        String actual = CarCenter.calculateMostReachCar(cars);
+        String actual = CarCenter.calculateMostExpensiveCar(cars);
         assertEquals(expected,actual);
     }
     @Test
@@ -60,7 +60,7 @@ public class CarCenterTest {
     public void testCalculateMostReachCar2(){
         cars = new Car[] {};
         String expected = "Car center doesn't have cars";
-        String actual = CarCenter.calculateMostReachCar(cars);
+        String actual = CarCenter.calculateMostExpensiveCar(cars);
         assertEquals(expected,actual);
     }
 }
