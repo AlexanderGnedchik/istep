@@ -3,7 +3,7 @@ package by.itstep.alexniko.model.entity.abstracts;
 public class Car {
     private double price; // $
     private String model; // line A,Q,RS,S...
-    private String vinNumberAuto;
+    private String vinNumberAuto; // VIN Number
 
     public Car() {
     }
